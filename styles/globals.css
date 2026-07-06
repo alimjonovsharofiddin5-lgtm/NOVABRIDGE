@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-light text-dark dark:bg-dark dark:text-light;
+}
+
+.glass {
+  @apply bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-white/20 dark:border-slate-700/20;
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 bg-slate-200 dark:bg-slate-700 text-dark dark:text-light rounded-lg font-semibold hover:shadow-lg transition-all;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+}
+
+.card {
+  @apply glass p-6 rounded-2xl hover:shadow-2xl transition-all duration-300;
+}
