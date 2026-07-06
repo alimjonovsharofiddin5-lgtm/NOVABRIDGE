@@ -1,3 +1,4 @@
+import { JokesFeatures } from '@/components/jokes/JokesFeatures'
 import { Hero } from '@/components/landing/Hero'
 import { Features } from '@/components/landing/Features'
 import { Modules } from '@/components/landing/Modules'
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Modules />
+      <JokesFeatures />
       <Pricing />
       <Footer />
     </main>
